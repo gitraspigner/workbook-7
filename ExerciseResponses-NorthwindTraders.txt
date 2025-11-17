@@ -1,6 +1,6 @@
 Ravi Spigner
 11/17/2025
-Workbook 7-Exercise-Northwind Traders
+Workbook 7-Exercise 1-Northwind Traders
 
 
 NOTE: These question should all be answered without the use of SQL Queries
