@@ -1,0 +1,49 @@
+Ravi Spigner
+11/17/2025
+Workbook 7-Exercise-Northwind Traders
+
+
+NOTE: These question should all be answered without the use of SQL Queries
+1. What categories of products does Northwind Traders sell?
+Beverages, Condiments, Confections, Dairy Products, Grains/Cereals, Meat/Poultry, Produce, Seafood
+2. What is the name of a product that sounds interesting to you?
+Scottish Longbreads
+3. What are some of the countries in which we have customers?
+Germany, Mexico, UK, Sweden, France, Spain, Canada, Argentina
+4. What date was our first order placed? How did you determine that?
+1996-07-04
+I found the part in the northwind sql file where orders were inserted in to the order table
+using the INSERT INTO Orders statement.
+I noticed that they were inserted in chronological order by the date of the order, which is
+the first date parameter for each order item. So the first order placed was at the top of the list.
+5. What date was our last order placed?
+1998-05-06
+6. How many customers do we currently have?
+I found the part in the northwind sql file where customers were inserted in to the Customers table
+using the INSERT INTO Customers statement.
+For each Customer/data inserted, I know that each insertion has 2 lines (one of which specifies the table and its data values). Lines 252 to 437 insert customers. So 437-252 = 185 (+1 include first line). 186/2 = 93.
+(Used: SELECT COUNT(*) AS total_customers FROM northwind.customers; which returns 93 rows, to check my work)
+7. Do we have any suppliers in South America? Europe? Africa?
+Yes, but (and I could have missed it) I didn't see any suppliers in Africa.
+8. What is our most expensive product?
+a bottle of wine called "Cte de Blaye" which is 263.5
+9. What is our least expensive product?
+a cheese called "Geitost" which is 2.5
+(Used: select productname, unitprice from northwind.products where unitprice = (select min(unitprice) from northwind.products); to check my work)
+10. We have a customer named "The Big Cheese" if I wanted to get details about their last
+order from us how would you find that information?
+I would look for the section where all orders are added, and then look for orders that match their customer ID (which is 5 characters, typically). Then, I can pick the one which has the most recent date for their order which is the orderdate field (or the first date field in the insert line statement) I can find their customer ID where they have been added as a customer.
+a. What tables would you use?
+Customers, Orders
+b. How would you link the data in the tables you are using
+CustomerID
+c. What information might I want to know about their order?
+OrderDate, OrderID
+i. Order Date?
+Yes, definitely.
+ii. Sales Total?
+Maybe, if we want to report that.
+iii. Product Name?
+Maybe that too if we want to report that.
+iv. Is there other information that you might find interesting?
+Maybe any fields of the order from Orders table that include "Ship" (ex. ShippedDate, ShipVia, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry).
