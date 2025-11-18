@@ -1,6 +1,6 @@
 # Ravi Spigner
 # 11/18/2025
-# Workbook 7-Exercise 4-Northwind Traders
+# Workbook 7-Exercise 3: Aggregates and Grouping-Northwind Traders
 # 1. How many suppliers are there? Use a query!
 use northwind;
 SELECT COUNT(*) FROM suppliers;
