@@ -1,6 +1,6 @@
 # Ravi Spigner
 # 11/17/2025
-# Workbook 7-Exercise 4-Northwind Traders
+# Workbook 7-Exercise 3-Northwind Traders
 # 1. What is the product name(s) of the most expensive products?
 # HINT: Find the max price in a subquery and then use that value to find products whose
 # price equals that value.
