@@ -1,7 +1,6 @@
 # Ravi Spigner
 # 11/17/2025
 # Workbook 7-Exercise 2-Northwind Traders
-
 # 1. What is the name of the table that holds the items Northwind sells?
 # products
 # 2. Write a query to list the product id, product name, and unit price of every product.
