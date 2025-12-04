@@ -4,7 +4,7 @@
 ### 🛠️ Tools Used
 ![SQL](https://img.shields.io/badge/language-SQL-blue.svg) / 
 ![mySQL](https://img.shields.io/badge/database-MySQL-4479A1.svg?logo=mysql&logoColor=white)
-![Windows CMD (Command Prompt)](https://img.shields.io/badge/shell-Windows%20CMD-black.svg?logo=windows-terminal&logoColor=white)
+![Windows CMD (Command Prompt)](hhttps://img.shields.io/badge/shell-Windows%20CMD-black.svg?logo=windows-terminal&logoColor=white)
 
 | Active/Inactive | Active Dates |
 | --- | --- |
